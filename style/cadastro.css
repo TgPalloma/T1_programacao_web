@@ -42,7 +42,6 @@ section {
 }
 
 .formulario {
-    box-sizing: content-box;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,20 +49,22 @@ section {
 }
 
 .formulario__item {
-width: 100%;
-margin: 5px 0;
-font-family: var(--font-padrao);
-color: var(--cor-secundaria);
-font-weight: bold;
+    width: 100%;
+    margin: 5px 0;
+    font-family: var(--font-padrao);
+    color: var(--cor-secundaria);
+    font-weight: bold;
 }
 
-.formulario__campo{
+.formulario__campo {
+    box-sizing: border-box;
     margin: 2px 0;
     width: 100%;
     font-size: 15px;
 }
 
 .formulario__campo__descricao {
+    box-sizing: border-box;
     margin: 2px 0;
     width: 100%;
     height: 150px;
@@ -84,35 +85,4 @@ font-weight: bold;
 
 .form-submit-button:hover {
     background-color: var(--cor-tercearia);
-}
-
-/*section {
-    margin: 0 20vh;
-    width: 500px;
-    display: flex;
-    flex-direction: column ;
-    height: 85vh;
-    background: #ffffff;
-    border: 2px solid black;
-}
-
-.cabecalho {
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5%;
-}
-
-.cabecalho__imagem {
-    width: 300px;
-}
-
-.cabecalho__titulo {
-    font-size: 25px;
-    text-align: center;
-}
-
-footer {
-    height: 10vh;
 }
