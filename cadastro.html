@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/cadastro.css">
+    <title>Cadastro de produtos</title>
+</head>
+
+<body>
+    <section>
+        <div class="cabecalho">
+            <img class="cabecalho__imagem" src="./assets/imgpetshop.png" alt="imagem pet shop">
+            <h1 class="cabecalho__titulo">Cadastro de Produtos</h1>
+        </div>
+
+        <form class="formulario">
+            <p class="formulario__item">Nome:<br>
+                <input  class="formulario__campo"type="text" name="NomeProduto"></p>
+
+            <p class="formulario__item">Código:<br>
+                <input class="formulario__campo" type="text" name="CodProduto"></p>
+
+            <p class="formulario__item">Quantidade:<br>
+                <input class="formulario__campo" type="number" name="Quantidade" ></p>
+
+            <p class="formulario__item">Preço de Compra:<br><input class="formulario__campo" type="number" step="0.01" name="PrecoCompra"></p>
+
+            <p class="formulario__item">Preço de Venda:<br>
+                <input class="formulario__campo" type="number" step="0.01" name="PrecoVenda"></p>
+
+            <p class="formulario__item">Descrição:<br>
+                <textarea  class="formulario__campo__descricao" name="Descricao" rows="10" cols="50">Escreva a descrição aqui</textarea></p>
+
+            <p><input class="form-submit-button" type="submit" value="Cadastrar"></p>
+        </form>
+    </section> 
+</body>
+
+</html>
